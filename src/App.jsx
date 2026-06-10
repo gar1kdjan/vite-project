@@ -1,13 +1,12 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
-import { Button } from "./components/button/button";
+import { Button } from "@components/button/button";
+import { Footer } from "@pages/Home/components/Footer/footer";
+console.log(viteLogo);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <section id="center">
@@ -110,6 +109,7 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+      <Footer />
     </>
   );
 }
